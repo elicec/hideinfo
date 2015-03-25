@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:gravity="center_vertical"
+        android:padding="0.0px" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/filedetails" />
+
+        <TextView
+            android:id="@+id/history_row_fileanme"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:ellipsize="end"
+            android:layout_alignLeft="@+id/history_row_img"
+           android:textSize="20sp"
+           android:layout_centerVertical="true"
+           android:layout_marginTop="20dp"
+             android:layout_marginBottom="20dp"
+             android:layout_marginLeft="40dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:text="文件名"
+            android:gravity="center"
+             />
+
+        <ImageView
+            android:id="@+id/history_row_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dip"
+            
+            android:includeFontPadding="false" />
+        
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/gesture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_weight="1"
+        >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" >
+
+            <ImageView
+                android:id="@+id/show_pic1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ap_3"
+                android:visibility="invisible" />
+
+            <ScrollView
+                android:id="@+id/scroolltext1"
+                android:layout_width="fill_parent"
+                android:layout_height="300dp"
+                android:layout_marginBottom="2dp" >
+
+                <TextView
+                    android:id="@+id/show_txt1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:visibility="invisible" />
+            </ScrollView>
+        </FrameLayout>
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+         >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center" >
+
+            <ImageView
+                android:id="@+id/show_pic2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/ap_3"
+                android:visibility="invisible" />
+
+            <ScrollView
+                
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="2dp" >
+
+                <TextView
+                    android:id="@+id/show_txt2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000000"
+                    android:textSize="20sp"
+                    android:visibility="invisible" />
+            </ScrollView>
+        </FrameLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/btn_shou"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:gravity="bottom"
+        android:padding="0.0px" >
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/filedetails" />
+
+        <TextView
+            android:id="@+id/text_filename"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="显示隐藏信息"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+</LinearLayout>

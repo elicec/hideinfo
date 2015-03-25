@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <ImageView 
+        android:id="@+id/radar_phone"
+        android:layout_width="50.0dip"
+        android:layout_height="50.0dip"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10.0dip"
+        android:background="@drawable/ap_3"
+        />
+
+    <ImageView
+        android:id="@+id/radar_ray_1"
+        android:layout_width="70.0dip"
+        android:layout_height="70.0dip"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10.0dip" />
+
+    <ImageView
+        android:id="@+id/radar_ray_2"
+        android:layout_width="70.0dip"
+        android:layout_height="70.0dip"
+       android:layout_centerInParent="true"
+        android:layout_marginLeft="10.0dip" />
+
+    <ImageView
+        android:id="@+id/radar_ray_3"
+        android:layout_width="70.0dip"
+        android:layout_height="70.0dip"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10.0dip" />
+
+</RelativeLayout>
